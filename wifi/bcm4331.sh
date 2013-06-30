@@ -14,7 +14,7 @@ done
 # Download b43-fwcutter
 if $NETWORK; then
 	echo "download b43-fwcutter..."
-	wget http://bues.ch/b43/fwcutter/b43-fwcutter-017.tar.bz2
+	wget "http://bues.ch/b43/fwcutter/b43-fwcutter-017.tar.bz2"
 fi
 
 # Extract b43-fwcutter
@@ -26,14 +26,14 @@ echo "build b43-fwcutter..."
 make
 # Install b43-fwcutter
 echo "install b43-fwcutter..."
-#sudo make install
+sudo make install
 cd ..
 
 
 # Download b43-fwcutter
 if $NETWORK; then
 	echo "download firmware..."
-	wget http://www.lwfinger.com/b43-firmware/broadcom-wl-5.100.138.tar.bz2
+	wget "http://www.lwfinger.com/b43-firmware/broadcom-wl-5.100.138.tar.bz2"
 fi
 
 # Extract firmware
