@@ -19,8 +19,8 @@ fi
 
 # Extract b43-fwcutter
 echo "extract b43-fwcutter..."
-tar xjf b43-fwcutter-017.tar.bz2
-cd "./b43-fwcutter-017"
+tar xjf b43-fwcutter-018.tar.bz2
+cd "./b43-fwcutter-018"
 # Build b43-fwcutter
 echo "build b43-fwcutter..."
 make
@@ -42,7 +42,7 @@ echo "extract firmware..."
 tar xjf broadcom-wl-5.100.138.tar.bz2
 # Install firmware
 echo "install firmware..."
-sudo b43-fwcutter -w "$FIRMWARE_INSTALL_DIR" broadcom-wl-5.100.138/linux/wl_apsta.o
+sudo b43-fwcutter -w "$FIRMWARE_INSTALL_DIR" broadcom-wl-6.30.163.46/linux/wl_apsta.o
 # Add module to kernel
 sudo modprobe -r b43
 sudo modprobe -a b43
