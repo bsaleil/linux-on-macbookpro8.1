@@ -42,7 +42,7 @@ echo "extract firmware..."
 tar xjf broadcom-wl-6.30.163.46.tar.bz2
 # Install firmware
 echo "install firmware..."
-sudo b43-fwcutter -w "$FIRMWARE_INSTALL_DIR" broadcom-wl-6.30.163.46/linux/wl_apsta.o
+sudo b43-fwcutter -w "$FIRMWARE_INSTALL_DIR" broadcom-wl-6.30.163.46.wl_apsta.o
 # Add module to kernel
 sudo modprobe -r b43
 sudo modprobe -a b43
