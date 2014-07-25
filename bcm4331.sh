@@ -14,7 +14,7 @@ done
 # Download b43-fwcutter
 if $NETWORK; then
 	echo "download b43-fwcutter..."
-	wget "http://bues.ch/b43/fwcutter/b43-fwcutter-018.tar.bz2"
+	wget "http://bues.ch/b43/fwcutter/b43-fwcutter-019.tar.bz2"
 fi
 
 # Extract b43-fwcutter
